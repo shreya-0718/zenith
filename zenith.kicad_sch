@@ -6321,7 +6321,7 @@
 	)
 	(text_box "LEDs"
 		(exclude_from_sim no)
-		(at 163.83 29.21 0)
+		(at 162.56 29.21 0)
 		(size 71.12 38.1)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -7404,6 +7404,15 @@
 	(no_connect
 		(at 285.75 200.66)
 		(uuid "f98ec71d-6e50-436a-b691-8121731e9e8b")
+	)
+	(bus_entry
+		(at 285.75 182.88)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "638dd5d9-e880-4ec5-86c3-a0a5c660c341")
 	)
 	(wire
 		(pts
@@ -13583,7 +13592,7 @@
 		(dnp no)
 		(uuid "1a7f27b6-089a-4132-a329-9c6cda0a36b9")
 		(property "Reference" "U1"
-			(at 68.58 124.46 0)
+			(at 68.072 126.238 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13591,7 +13600,7 @@
 			)
 		)
 		(property "Value" "TPS63070RNMR"
-			(at 68.58 127 0)
+			(at 68.072 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)

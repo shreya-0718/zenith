@@ -1875,7 +1875,7 @@
 		(layer "F.Cu")
 		(uuid "1c078075-50f9-4b45-b82a-1ab35d7a0a96")
 		(at 120.46 97.32 180)
-		(property "Reference" "SW2"
+		(property "Reference" "BOOT"
 			(at 0.02 -2.09 0)
 			(layer "F.SilkS")
 			(uuid "8ebd47c6-b910-4947-9fb2-9a1a0bb6505c")
@@ -8471,14 +8471,15 @@
 		(layer "F.Cu")
 		(uuid "8fb57998-6eea-4b77-9c92-03842c8e1e8f")
 		(at 129.69 73.88 180)
-		(property "Reference" "Card1"
+		(property "Reference" "SD Card"
 			(at -0.01 0 0)
 			(layer "F.SilkS")
 			(uuid "48130642-e6b5-408b-8416-8024af9a9b86")
 			(effects
 				(font
 					(size 0.5 0.5)
-					(thickness 0.15)
+					(thickness 0.1)
+					(bold yes)
 				)
 			)
 		)
@@ -9002,20 +9003,20 @@
 		(uuid "97fb1cfa-e802-487e-9862-22c6d687208b")
 		(at 110.49 76.35)
 		(property "Reference" "U2"
-			(at -1.16 -3.1 0)
+			(at 0.22 0.32 0)
 			(layer "F.SilkS")
-			(uuid "4a9f8094-3146-4304-9093-9ae4e9522c55")
+			(uuid "7052efb9-a342-4a93-bd0f-27f0b0105c58")
 			(effects
 				(font
 					(size 0.5 0.5)
-					(thickness 0.15)
+					(thickness 0.125)
 				)
 			)
 		)
 		(property "Value" "BMP580"
 			(at 0 4.78 0)
 			(layer "F.Fab")
-			(uuid "8280defd-d5c4-4a6d-a2eb-134360d0dad0")
+			(uuid "1ea99acf-482c-4c37-ad4a-3ad0c4130ed0")
 			(effects
 				(font
 					(size 1 1)
@@ -9027,7 +9028,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5d25e217-7513-4fc7-beea-668a186e9146")
+			(uuid "cb85c58b-b941-4169-a8c5-9386cad3a8c7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9039,7 +9040,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6b923739-4710-442b-b340-92dfb319f8a8")
+			(uuid "7a5340a3-326c-4816-a9c7-bb6e95478311")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12279,7 +12280,7 @@
 		(layer "F.Cu")
 		(uuid "bb5cedbd-d6ba-4077-ad8c-cdc5bca6c143")
 		(at 113.85 97.36)
-		(property "Reference" "SW1"
+		(property "Reference" "RESET"
 			(at 0.06 2.05 0)
 			(layer "F.SilkS")
 			(uuid "029838df-3873-4e28-8f42-8c542e6395f5")
