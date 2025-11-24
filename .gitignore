@@ -26,11 +26,9 @@ fp-info-cache
 *.dsn
 *.ses
 
-# Exported BOM files
-*.xml
-*.csv
-
 easyeda2kicad/
 fp-lib-table
 sym-lib-table
 .gitattributes
+zenith.kicad_pcb
+zenith.kicad_pro
