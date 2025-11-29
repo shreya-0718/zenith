@@ -1,37 +1,37 @@
-"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
-1;"U2";"LGA-10_L2.0-W2.0-P0.50-TL_BMP580";1;"BMP580";;;
-2;"R23";"R_0201_0603Metric";1;"330";;;
-3;"LED2,LED1";"LED-SMD_4P-L2.0-W2.0-TL_WS2812B-2020";2;"WS2812B-2020";;;
-4;"C26,C24,C1,C25";"C_0402_1005Metric";4;"1uF";;;
-5;"R2,R1";"R_0201_0603Metric";2;"5.1 K";;;
-6;"R20,R21,R12,R5,R13,R16,R19,R10,R4,R17,R8,R3,R18,R6";"R_0201_0603Metric";14;"10K";;;
-7;"C30,C20,C32,C8,C19,C37,C22,C28,C29,C21,C31";"C_0201_0603Metric";11;"100nF";;;
-8;"C3";"C_0805_2012Metric";1;"44uF";;;
-9;"C9,C2,C7,C10,C27,C4,C6,C11";"C_0402_1005Metric";8;"10uF";;;
-10;"U4";"LGA-14_L3.0-W2.5-P0.50-TL";1;"ICM-45686";;;
-11;"BOOT,RESET";"SW-SMD_L3.9-W3.0-P4.45";2;"TS-1088-AR02016";;;
-12;"C15";"C_0201_0603Metric";1;"0.1uF";;;
-13;"R14";"R_0402_1005Metric";1;"100k";;;
-14;"L1";"L2520";1;"1uH";;;
-15;"C17,C13,C12,C18,C14";"C_0805_2012Metric";5;"22uF";;;
-16;"J1";"TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal";1;"Screw_Terminal_01x02";;;
-17;"SERVO HEADERS,J2";"PinHeader_1x03_P2.54mm_Vertical";2;"Conn_01x03";;;
-18;"C16,C23";"C_0402_1005Metric";2;"2.2uF";;;
-19;"R15";"R_0201_0603Metric";1;"22.1k";;;
-20;"X1";"CRYSTAL-SMD_4P-L3.2-W2.5-BL";1;"X322525MOB4SI";;;
-21;"U3";"VFQFPN-24_L4.0-W4.0-P0.50-BL-EP2.8";1;"BQ25883RGER";;;
-22;"D1";"LED_0402_1005Metric";1;"LED";;;
-23;"SD Card";"TF-SMD_TF-01A";1;"TF-01A";;;
-24;"R11";"R_0201_0603Metric";1;"5.23K";;;
-25;"C5";"C_0805_2012Metric";1;"47uF";;;
-26;"C36,C35,C33,C34";"C_0201_0603Metric";4;"20pF";;;
-27;"R22";"R_0201_0603Metric";1;"10k";;;
-28;"U6";"SOT-23-6";1;"LMR51430";;;
-29;"R9";"R_0201_0603Metric";1;"30.1K";;;
-30;"X2";"FC-135R_L3.2-W1.5";1;"Q13FC1350000400";;;
-31;"L4";"L0603";1;"FCM1608KF-601T03";;;
-32;"U5";"LQFP-64_10x10mm_P0.5mm";1;"STM32F722RETx";;;
-33;"L2";"IND-SMD_L4.0-W4.0-A";1;"1.5uH";;;
-34;"L3";"IND-SMD_L3.0-W3.0";1;"5.6uH";;;
-35;"USB1";"USB-C-SMD_TYPE-C-6PIN-2MD-073";1;"TYPE-C 16PIN 2MD(073)";;;
-36;"R7";"R_0201_0603Metric";1;"383";;;
+Item,Description,Link,Cost,Quantity
+BMP580,Barometric pressure sensor,https://www.lcsc.com/product-detail/C22391138.html,1.08,1
+Resistor,330,https://www.lcsc.com/product-detail/C105881.html,0.12,1
+LED,WS2812B-2020 SMD,https://www.lcsc.com/product-detail/C965555.html,0.08,2
+Capacitor,1uF,https://jlcpcb.com/partdetail/53938-CL05A105KA5NQNC/C52923,0.01,4
+Resistor,5.1 K,https://jlcpcb.com/partdetail/26648-0402WGF5101TCE/C25905,0.01,2
+Resistor,10,https://jlcpcb.com/partdetail/26487-0402WGF1002TCE/C25744 ,0.01,14
+Capacitor,100nF,https://jlcpcb.com/partdetail/1877-CL05B104KO5NNNC/C1525,0.01,11
+Capacitor,44nF,https://www.lcsc.com/product-detail/C49326689.html,0.54,1
+Capacitor,10uF,https://jlcpcb.com/partdetail/2043-CL10A106MQ8NNNC/C1691,0.01,8
+ICM-45686,Motion sensor,https://www.lcsc.com/product-detail/C22459454.html,8.55,1
+TS-1088-AR02016,Button,https://www.lcsc.com/product-detail/C720477.html,0.08,2
+Capacitor,0.1uF,https://www.lcsc.com/product-detail/C76934.html,0.12,1
+Resistor,100k,https://www.lcsc.com/product-detail/C60491.html,0.06,1
+Inductor,1uH,https://www.lcsc.com/product-detail/C435392.html,0.5,1
+Capacitor,22uF,https://www.lcsc.com/product-detail/C602037.html,0.024,5
+Screw Terminal,01x02,https://www.lcsc.com/product-detail/C557685,1.15,1
+Connector,01x03,https://jlcpcb.com/partdetail/-PinSocket_1x03_P254mm_Vertical/C9900002703,0.01,2
+Capacitor,2.2uF,https://jlcpcb.com/partdetail/13164-CL05A225MQ5NSNC/C12530,0.0024,2
+Resistor,22.1k,https://jlcpcb.com/partdetail/YAGEO-RC0201FR0722K1L/C142019,$0.00,1
+Crystal Oscillator,25MHz,https://jlcpcb.com/partdetail/YXC_CrystalOscillators-X322525MOB4SI/C9006,0.07,1
+BQ25883RGER,Charging IC,https://jlcpcb.com/partdetail/TexasInstruments-BQ25883RGER/C544362,4.47,1
+LED,Indicator,https://jlcpcb.com/partdetail/EverlightElec-16_213SDRC_S530_A3TR8/C71911,0.03,1
+TF-01A,Micro SD Card,https://jlcpcb.com/partdetail/Korean_HropartsElec-TF01A/C91145,0.17,1
+Resistor,5.23k,https://jlcpcb.com/partdetail/301853-RC01W5231FT/C320948,0.001,1
+Capacitor,47uF,https://www.lcsc.com/product-detail/C49326689.html,0.54,1
+Capacitor,20pF,https://jlcpcb.com/partdetail/72988-0201CG200J500NT/C71879,0.0007,4
+Resistor,10k,https://jlcpcb.com/partdetail/LIZElec-CR0201FH1002G/C100126,0.0005,1
+LMR51431,Power Management,https://jlcpcb.com/partdetail/TexasInstruments-LMR51430XDDCR/C5185863,0.97,1
+Resistor,30.1k,https://jlcpcb.com/partdetail/YAGEO-RC0201FR0730K1L/C273278,0.0008,1
+Q13FC1350000401,Crystal Oscillator,https://jlcpcb.com/partdetail/SeikoEpson-Q13FC1350000400/C49109464,0.25,1
+FCM1608KF-601T04,Ferrite Bead,https://jlcpcb.com/partdetail/TAITECH-FCM1608KF601T03/C141723,0.0046,1
+STM32F722RETx,MCU,https://jlcpcb.com/partdetail/STMicroelectronics-STM32F722RET6/C118207,6.05,1
+Inductor,1.5uH,https://www.lcsc.com/product-detail/C3033018.html,1.22,1
+Inductor,5.6uH,https://www.lcsc.com/product-detail/C18236327.html,0.25,1
+USB Receptacle,USB-C,https://jlcpcb.com/partdetail/DEALON-USB_TYPE_C007/C2927027,0.05,1
+Resistor,383,https://jlcpcb.com/partdetail/416501-0201WMF3830TEE/C423551,0.0005,1
