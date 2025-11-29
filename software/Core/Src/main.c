@@ -112,6 +112,10 @@ int main(void)
   MX_USB_OTG_FS_HCD_Init();
   /* USER CODE BEGIN 2 */
 
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
+  HAL_I2C_Mem_Read(&hi2c1, 0x77 << 1, 0xD0, 1, &bmp_id, 1, HAL_MAX_DELAY);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -119,12 +123,31 @@ int main(void)
   while (1)
   {
     // js flash on, off, 1s delay
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET); // LEDS ON
-    HAL_Delay(1000); // in ms
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET); // LEDS OFF
-    HAL_Delay(1000);
+//		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_SET); // LEDS ON
+//		HAL_Delay(1000); // in ms
+//		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 1500);
+//		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 1500);
+//		HAL_Delay(1000);
+//		HAL_Delay(1000);
+
+    HAL_I2C_Mem_Read(&hi2c1, 0x77 << 1, 0x04, 1, data, 3, HAL_MAX_DELAY);
+
+    raw_pressure = ((uint32_t)data[0] << 16) |
+                   ((uint32_t)data[1] << 8)  |
+                   (uint32_t)data[2];
+
+    if (raw_pressure > 50000) {
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+    } else {
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+    }
+    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 1500);
+    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 1500);
+
+    HAL_Delay(5000);
 
     /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -420,7 +443,17 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_2, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(BQ_CE_GPIO_Port, BQ_CE_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : PA2 */
+  GPIO_InitStruct.Pin = GPIO_PIN_2;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : ICM_INT2_Pin ICM_INT1_Pin BMP_INT_Pin BQ_INT_Pin */
   GPIO_InitStruct.Pin = ICM_INT2_Pin|ICM_INT1_Pin|BMP_INT_Pin|BQ_INT_Pin;
